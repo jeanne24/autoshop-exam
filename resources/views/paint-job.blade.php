@@ -43,17 +43,28 @@
                     </table>
                 </div>
                 <div class="side-content " id="shop-performance">
-                <table style="width:85%">
+                <table style="width:85%; border:0px ;">
                     <tr>
                         <th colspan="2">SHOP PERFORMANCE</th>
                     </tr>
                     <tr>
-                        <td>Jill</td>
-                        <td>Smith</td>
+                        <td>Total</td>
+                        <td>{{$total}}</td>
                     </tr>
                     <tr>
-                        <td>Eve</td>
-                        <td>Jackson</td>
+                        <td>Breakdown</td>
+                    </tr>
+                    <tr>
+                        <td>Blue</td>
+                        <td>{{$blue}}</td>
+                    </tr>
+                    <tr>
+                        <td>Red</td>
+                        <td>{{$red}}</td>
+                    </tr>
+                    <tr>
+                        <td>Green</td>
+                        <td>{{$green}}</td>
                     </tr>
                     </table>
                     </div>
