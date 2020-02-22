@@ -47,12 +47,14 @@
                     <tr>
                         <th colspan="2">SHOP PERFORMANCE</th>
                     </tr>
+                    <tbody>
                     <tr>
                         <td>Total</td>
                         <td>{{$total}}</td>
                     </tr>
                     <tr>
-                        <td>Breakdown</td>
+                        <td>Breakdown:</td>
+                        <td></td>
                     </tr>
                     <tr>
                         <td>Blue</td>
@@ -66,6 +68,7 @@
                         <td>Green</td>
                         <td>{{$green}}</td>
                     </tr>
+                    </tbody>
                     </table>
                     </div>
 

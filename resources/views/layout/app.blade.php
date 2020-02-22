@@ -108,6 +108,18 @@
             .side-content table th{
                 background-color:#ea6a5b;
                 color: #ffffff;
+                padding-top:8px;
+                padding-bottom:5px;
+                
+            }
+            .side-content table td {
+                background-color: #e8e8e8;
+                border: 1px solid #e8e8e8;
+                color: #000000;
+            }
+
+            .side-content table tbody td{
+                padding: 3px;
             }
             table{
                 border-collapse: collapse;
