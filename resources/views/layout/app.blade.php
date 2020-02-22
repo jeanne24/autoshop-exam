@@ -83,7 +83,7 @@
             }
 
             .main-content div{
-                display: block!important;
+                display: block;
             }
 
             .paint-job .content table{
@@ -111,6 +111,15 @@
             }
             table{
                 border-collapse: collapse;
+                margin-bottom: 30px;
+            }
+            #shop-performance, .d-inline-block{
+                display:inline-block!important;
+            }
+
+            .content strong{
+                font-size: 14px;
+                margin-bottom: 16px;
             }
         </style>
     </head>

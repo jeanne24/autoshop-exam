@@ -13,3 +13,4 @@
 
 Route::get('/','HomeController@index');
 Route::get('/paint-job','PaintJobController@index');
+Route::post('/', 'HomeController@create');
