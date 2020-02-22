@@ -14,16 +14,19 @@
     <section class="car-details">
         <strong>Car Details</strong>
         <form method="POST" action="/">
+        @isset($error)
+        {{$error}}
+        @endisset
         @csrf
             <div class="form-input"><label>Plate No.</label><input type="text" name="platenumber"></div>
             <div class="form-input"><label>Current Color</label><select type="text" name="currentColor" id="currentColor">
-            <option value="Red">-</option>
+            <option value="-">-</option>
             <option value="Red">Red</option>
             <option value="Green">Green</option>
             <option value="Blue">Blue</option>
             </select></div>
             <div class="form-input"><label>Target Color</label><select type="text" name="targetColor" id="targetColor">
-            <option value="Red">-</option>
+            <option value="-">-</option>
             <option value="Red">Red</option>
             <option value="Green">Green</option>
             <option value="Blue">Blue</option>
@@ -41,13 +44,23 @@
     function currentColor(e){
         console.log(e.target.value)
         let imgCurrentCar = document.getElementById('currentCarColor')
-        imgCurrentCar.setAttribute("src","/img/"+e.target.value+" Car.png")
+        if(e.target.value=='-'){
+            imgCurrentCar.setAttribute("src","/img/Default Car.png")
+            return;
+        }else{
+            imgCurrentCar.setAttribute("src","/img/"+e.target.value+" Car.png")
+        }
 
     }
     function targetColor(e){
         console.log(e.target.value)
         let imgTargetCar = document.getElementById('targetCarColor')
-        imgTargetCar.setAttribute("src","/img/"+e.target.value+" Car.png")
+        if(e.target.value=='-'){
+            imgTargetCar.setAttribute("src","/img/Default Car.png")
+            return;
+        }else{
+            imgTargetCar.setAttribute("src","/img/"+e.target.value+" Car.png")
+        }
     }
     </script>
     @endsection

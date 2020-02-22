@@ -12,6 +12,7 @@
 */
 
 Route::get('/','HomeController@index');
+Route::post('/', 'HomeController@create')->middleware('checkforemptyfields');
 Route::get('/paint-job','PaintJobController@index');
-Route::post('/', 'HomeController@create');
 Route::get('/performance-report', 'JobsController@report');
+Route::get('/done/{id}', 'PaintJobController@done');

@@ -56,12 +56,28 @@
                 padding:18px;
             }
 
+            form{
+                margin-top: 18px;
+            }
+
+            .form-input{
+                margin-top:7px;
+            }
+
             .form-input label{
                 width: 145px;
+                font-size:14px;
                 display: inline-block;
             }
 
+            .form-input input, select{
+                width:200px;
+                height:20px;
+                border-radius: 0px;
+            }
+
             button{
+                margin-top:20px;
                 height: 32px;
                 width:150px;
                 background-color:#ea6a5b;
